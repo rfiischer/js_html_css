@@ -1,7 +1,7 @@
 ﻿//Creates Canvas
 var canvas = document.createElement("CANVAS");
 canvas.id = "canvas";
-canvas.height = (screen.height*0.7).toString();
+canvas.height = (screen.height*0.5).toString();
 canvas.width = (screen.width).toString();
 
 //Sets the cube side, canvas context, and some global variables

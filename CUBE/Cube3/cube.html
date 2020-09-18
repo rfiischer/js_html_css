@@ -11,9 +11,9 @@
 			<div id="form">
 				<div class="container">
 					<form class="box">
-						<input type="radio" name="erase" value="rastro" id="butt" >Rastro
+						<input type="radio" name="erase" value="rastro" id="butt" >Trace
 						<br>
-						<input type="radio" name="erase" value="apagar" id = "sbutt" checked>Sem rastro
+						<input type="radio" name="erase" value="apagar" id = "sbutt" checked>No trace
 					</form>
 					<form class="box">
 						<input type="radio" name="build" value="rastro" id="buildButton" >Build
@@ -21,9 +21,9 @@
 						<input type="radio" name="build" value="apagar" id = "drawButton" checked>Draw
 					</form>
 					<form class="box">
-						<input type="radio" name="colorido" value="single" id="cbutt" checked>Colorido
+						<input type="radio" name="colorido" value="single" id="cbutt" >Colorful
 						<br>
-						<input type="radio" name="colorido" value="multiple" id="ebutt" >Escolha Cor
+						<input type="radio" name="colorido" value="multiple" id="ebutt" checked>Choose the color
 					</form>
 					<form class="box">
 						<input type="checkbox" name="face" value="face" id="face" >Faces
@@ -33,26 +33,29 @@
 				</div>
 				<div class="container">
 					<form class="selectors" id="misc">
-						<input type="range" name="red" value="red" id="R">Vermelho
+						<input type="range" name="red" value="red" id="R">Red
 						<br>
-						<input type="range" name="green" value="green" id="G">Verde
+						<input type="range" name="green" value="green" id="G">Green
 						<br>
-						<input type="range" name="blue" value="blue" id="B">Azul
+						<input type="range" name="blue" value="blue" id="B">Blue
 						<br>
-						<input type="range" name="thickness" value="thickness" id="THICK">Expessura do fio
+						<input type="range" name="thickness" value="thickness" id="THICK">Edge thickness
 						<br>
-						<input type="range" name="sensitivity" value="sensitivity" id="sens">Sensibilidade a rotação
+						<input type="range" name="sensitivity" value="sensitivity" id="sens">Rotation sensitivity
 					</form>
 					<form class="selectors" >
-						<input type="range" name="red" value="red" id="xC">Coordenada X do centro de rotação
+						<input type="range" name="red" value="red" id="xC">X component of rotation point
 						<br>
-						<input type="range" name="green" value="green" id="yC">Coordenada Y do centro de rotação
+						<input type="range" name="green" value="green" id="yC">Y component of rotation point
 						<br>
-						<input type="range" name="blue" value="blue" id="zC">Coordenada Z do centro de rotação
+						<input type="range" name="blue" value="blue" id="zC">Z component of rotation point
 					</form>
 				</div>
-				<div class="button" id="erasebutton">Apagar quadro</div>
-				<div class="button" id="rShapeButton">Voltar ao cubo</div>
+				<div class="button" id="erasebutton">Erase traces</div>
+				<div class="button" id="rShapeButton">Reset cube</div>
+				<div>*note: the 'Colorful' mode is unavailable.*</div>
+				<div>*hint: click on build, rotate the cube and then click on draw again*</div>
+				<div>* DO NOT REPEAT THIS! If you build a huge object the browser collapses *</div>
 			</div>
 		</div>
 	</body>
