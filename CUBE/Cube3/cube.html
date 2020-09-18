@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+	    <title> CUBE </title>
+		<link rel="stylesheet" href="stylesheet.css" />
+		<script type="text/javascript" src="3DOM.js"></script>
+	</head>
+	<body>
+	    <script type="text/javascript" src="script.js"></script>
+		<div id="main">
+			<div id="form">
+				<div class="container">
+					<form class="box">
+						<input type="radio" name="erase" value="rastro" id="butt" >Rastro
+						<br>
+						<input type="radio" name="erase" value="apagar" id = "sbutt" checked>Sem rastro
+					</form>
+					<form class="box">
+						<input type="radio" name="build" value="rastro" id="buildButton" >Build
+						<br>
+						<input type="radio" name="build" value="apagar" id = "drawButton" checked>Draw
+					</form>
+					<form class="box">
+						<input type="radio" name="colorido" value="single" id="cbutt" checked>Colorido
+						<br>
+						<input type="radio" name="colorido" value="multiple" id="ebutt" >Escolha Cor
+					</form>
+					<form class="box">
+						<input type="checkbox" name="face" value="face" id="face" >Faces
+						<br>
+						<input type="checkbox" name="edge" value="edge" id="edge" checked>Edges
+					</form>
+				</div>
+				<div class="container">
+					<form class="selectors" id="misc">
+						<input type="range" name="red" value="red" id="R">Vermelho
+						<br>
+						<input type="range" name="green" value="green" id="G">Verde
+						<br>
+						<input type="range" name="blue" value="blue" id="B">Azul
+						<br>
+						<input type="range" name="thickness" value="thickness" id="THICK">Expessura do fio
+						<br>
+						<input type="range" name="sensitivity" value="sensitivity" id="sens">Sensibilidade a rotação
+					</form>
+					<form class="selectors" >
+						<input type="range" name="red" value="red" id="xC">Coordenada X do centro de rotação
+						<br>
+						<input type="range" name="green" value="green" id="yC">Coordenada Y do centro de rotação
+						<br>
+						<input type="range" name="blue" value="blue" id="zC">Coordenada Z do centro de rotação
+					</form>
+				</div>
+				<div class="button" id="erasebutton">Apagar quadro</div>
+				<div class="button" id="rShapeButton">Voltar ao cubo</div>
+			</div>
+		</div>
+	</body>
+</html>
