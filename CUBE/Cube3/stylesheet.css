@@ -2,14 +2,23 @@
     background-color: #0098FF;
 	color: white;
 	border-radius: 5px;
-	margin: auto;
 	width: 200px;
 	font-size: 24px;
 	font-family: Arial;
 	text-align: center;
 	margin-top: 20px;
 	display: inline-block;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
+
+#buttons {
+    padding: 2%;
+    text-align: center;
+	width: 80%;
+	margin: auto;
+}
+
 #main {
 	position: fixed;
 	top: 50%;
@@ -23,11 +32,19 @@
 
 .selectors {
 	display:inline-block;
-	margin-left: 20px;
+}
+
+#rightSel {
+	float: right;
+}
+
+#leftSel {
+	
 }
 
 #form {
-	
+	width: 50%;
+	margin: auto;
 }
 
 .container {
