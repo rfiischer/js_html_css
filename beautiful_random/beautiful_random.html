@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>beautiful random</title>
+      <link rel="stylesheet" href="stylesheet.css" />
+   </head>
+   <body id="body">
+      <script>
+	     var create = function(){
+		 var id;
+         var div = [];
+         var bColor;
+         var k;  
+		 var temp;
+		 var temp2;
+		 var temp3;
+         for(i = 0; i < Math.ceil(screen.width/20)-2; i++){
+            div[i] = [];
+			temp = document.createElement("DIV");
+			temp.id = "#" + i.toString();
+			temp.className = "parent";
+			document.getElementById("body").appendChild(temp);
+            for(j = 0; j < Math.ceil(screen.height/20) - 7; j++){
+               id = i.toString() + "#" + j.toString();
+			   temp = document.createElement("DIV");
+			   temp.id = id;
+			   temp2 = "#" + i.toString();
+			   document.getElementById(temp2).appendChild(temp);
+             }
+         }
+		 }
+		 var verify = function (color, minimun){
+		    if (color.length != minimun){
+                if (color.length < minimun){
+                    while(color.length < minimun){
+                    color = color + "0";
+					return color;
+                    };
+                } else {
+                    color = color.substring(0, minimun);
+					return color;
+                }
+		    } else {
+			    return color;
+			}
+		}
+		 var color = function() {
+		     var red;
+			 var green;
+			 var blue;
+		     for(i = 0; i < Math.ceil(screen.width/20)-2; i++){
+			     for(j = 0; j < Math.ceil(screen.height/20) - 7; j++){
+                     temp3 = Math.random();
+					 if (temp3 < (Math.ceil(screen.height/20)-j)/Math.ceil(screen.height/20)){
+			             blue =  (255 - i*temp3).toString(16);
+						 green = (255 - j*temp3).toString(16);
+						 blue = verify(blue, 2);
+						 green = verify(green, 2);
+						 bColor = "00" + blue + green;
+				     } else {
+				         bColor = "000000"
+				     }
+					bColor = verify(bColor, 6);
+					bColor = "#" + bColor;
+					id = i.toString() + "#" + j.toString();
+					document.getElementById(id).style.backgroundColor = bColor;
+				}
+			 }
+		 }
+		 create();
+		 color();
+		 setInterval(function () {color()}, 250);
+      </script>
+   </body>
+</html>

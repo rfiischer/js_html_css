@@ -1,0 +1,1 @@
+This page generates beautiful random patterns where the probability of each square being colored is linearly increasing with its height position. The color changes randomly also based on the (x, y) coordinates of the square.
