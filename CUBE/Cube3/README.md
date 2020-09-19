@@ -2,4 +2,4 @@
 
 The 'cube' page has a simple example where you can rotate a cube, and eventually build bizarre complex objects.
 
-![Example Image](https://drive.google.com/file/d/13fMePaElKq2ODpJuwkaTpHaqkd2uJXBp/preview)
+![Example Image](https://github.com/rfiischer/js_html_css/blob/master/.resources/cube3_snapshot.png?raw=true)
